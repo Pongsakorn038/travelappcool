@@ -14,7 +14,7 @@ class _FeedpageState extends State<Feedpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(255, 255, 255, 0.95),
+      backgroundColor: Color.fromRGBO(244, 244, 244, 0.80),
       body: SafeArea(
         child: Column(
           children: [
@@ -118,13 +118,50 @@ class _FeedpageState extends State<Feedpage> {
                   SizedBox(
                     height: 25,
                   ),
-                  Row(
-                    children: [
-                      Column(
-                        // children: [Image()],
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        
                       ),
-                    ],
-                  ),
+                      child: Container(
+                        
+                        height: 75,
+                        width: 75,
+                        decoration: BoxDecoration(
+                         
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://www.lifeinnorway.net/wp-content/uploads/2018/02/norwegian-lifestyle-facts.jpg"),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(15.0)),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Container(
+                      height: 75,
+                      width: 75,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                "http://res.cloudinary.com/simpleview/image/upload/v1574085889/clients/norway/bryggen_wharf_bergen_hordaland_fjord_norway_photo_florian_olbrechts_34ad36ea-f7bc-4150-b48b-af2c2c14628f.jpg"),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(15.0)),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+
+                  ],
+                ),
                 ],
               ),
             ),

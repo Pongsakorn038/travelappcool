@@ -14,17 +14,23 @@ class _OtherProfilepageState extends State<OtherProfilepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: EdgeInsets.zero,
-        children: <Widget>[
-          toppage(),
-          nameProfile(),
-          folButton(),
-          contProfile(),
-          folNumber(),
-          uPost(),
-          post(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ListView(
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+                toppage(),
+                nameProfile(),
+                folButton(),
+                contProfile(),
+                folNumber(),
+                uPost(),
+                post(),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class UserProfile extends StatefulWidget {
   const UserProfile({super.key});
 
@@ -12,8 +11,9 @@ class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(244, 244, 244, 0.95),
       body: SingleChildScrollView(
-        child: Column(      
+        child: Column(
           children: [
             Column(
               children: [
@@ -81,7 +81,8 @@ class _UserProfileState extends State<UserProfile> {
                                           ),
                                           Text(
                                             '  100\n Posts',
-                                            style: TextStyle(color: Colors.white),
+                                            style:
+                                                TextStyle(color: Colors.white),
                                           ),
                                         ],
                                       ),
@@ -95,7 +96,8 @@ class _UserProfileState extends State<UserProfile> {
                                           ),
                                           Text(
                                             '   10,123\n Followers',
-                                            style: TextStyle(color: Colors.white),
+                                            style:
+                                                TextStyle(color: Colors.white),
                                           ),
                                         ],
                                       ),
@@ -109,7 +111,8 @@ class _UserProfileState extends State<UserProfile> {
                                           ),
                                           Text(
                                             '       32\n Following',
-                                            style: TextStyle(color: Colors.white),
+                                            style:
+                                                TextStyle(color: Colors.white),
                                           ),
                                         ],
                                       ),
@@ -162,7 +165,8 @@ class _UserProfileState extends State<UserProfile> {
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'My memories',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
@@ -214,7 +218,8 @@ class _UserProfileState extends State<UserProfile> {
                       alignment: Alignment.centerLeft,
                       child: Text(
                         'My reviews',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ],
